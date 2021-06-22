@@ -9,7 +9,6 @@ This project is an online shopping portal for a fictional store. This applicatio
 ## Links
 
 - [Pull Request - Phase 1](https://github.com/dcalhoun286/storefront/pull/1)
-- [Deployed Link](#)
 
 ## Phase 1: Application Setup
 
@@ -17,7 +16,7 @@ In this first phase, our goal is to setup the basic scaffolding of the applicati
 
 The following user/developer stories detail the major functionality for this phase of the project:
 
-- As a user, I expect to see a lsit of available product categories in the store so that I can easily browse products
+- As a user, I expect to see a list of available product categories in the store so that I can easily browse products
 - As a user, I want to choose a category and see a list of all available products matching that category
 - As a user, I want a clean, easy to user user interface so that I can shop the online store with confidence
 
