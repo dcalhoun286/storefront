@@ -38,6 +38,8 @@ The high level development tasks that address the above end user requirements:
 
 ### Resources and Collaborators
 
+- Images: [Unsplash](https://unsplash.com/)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
