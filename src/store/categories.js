@@ -21,7 +21,7 @@ const initialState = {
   activeCategory: {},
 }
 
-export default function reducer (state, action) {
+export default function reducer (state=initialState, action) {
   const {type, payload} = action;
   switch(type) {
     case 'GETCATEGORIES':
