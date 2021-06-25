@@ -9,6 +9,7 @@ This project is an online shopping portal for a fictional store. This applicatio
 ## Links
 
 - [Pull Request - Phase 1](https://github.com/dcalhoun286/storefront/pull/1)
+- Deployed Link: [Code Sandbox](https://codesandbox.io/s/fast-framework-70bzz)
 
 ## Phase 1: Application Setup
 
