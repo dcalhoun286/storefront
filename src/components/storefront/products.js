@@ -10,12 +10,20 @@ function Products (props) {
   const products = useSelector((state) => state.products.products);
   console.log('products', products);
 
+  const currentCategory = useSelector((state) => state.categories.activeCategory);
+
+  const filteredProducts = products.filter(product => {
+    return product.category === currentCategory;
+  });
+
+  console.log('products of active category', filteredProducts);
+
   return (
     <>
       <h3>Products</h3>
       <ul>
 
-        {products.map((item, idx) => <li key={idx}><button>{item.name}</button></li>)}
+        {filteredProducts.map((item, idx) => <li key={idx}><button>{item.name}</button></li>)}
 
       </ul>
     </>
