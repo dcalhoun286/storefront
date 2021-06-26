@@ -20,7 +20,7 @@ function Products (props) {
 
   return (
     <>
-      <h3>Products</h3>
+      <h3>{currentCategory}</h3>
       <ul>
 
         {filteredProducts.map((item, idx) => <li key={idx}><button>{item.name}</button></li>)}
