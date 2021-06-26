@@ -28,6 +28,7 @@ export default function reducer (state=initialState, action) {
       return {...state, categories: payload, activeCategory: payload[0]};
     case 'CHANGECATEGORIES':
       let newState = {...state, activeCategory: payload};
+      console.log('new state', newState);
       return newState;
     default:
       return state;

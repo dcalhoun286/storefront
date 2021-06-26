@@ -12,12 +12,19 @@ function Categories (props) {
   const categories = useSelector((state) => state.categories.categories);
   console.log('categories', categories);
 
+  function showCategory(e) {
+    e.preventDefault();
+    console.log(e.target.value);
+    let category = e.target.value;
+    dispatch(changeCategories(category));
+  }
+
   return (
     <>
       <h3>Categories</h3>
       <ul>
 
-        {categories.map((item, idx) => <li key={idx}>{item.name}</li>)}
+        {categories.map((item, idx) => <li key={idx}><button onClick={showCategory} value={item.name}>{item.name}</button></li>)}
 
       </ul>
     </>

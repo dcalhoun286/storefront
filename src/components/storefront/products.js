@@ -15,7 +15,7 @@ function Products (props) {
       <h3>Products</h3>
       <ul>
 
-        {products.map((item, idx) => <li key={idx}>{item.name}</li>)}
+        {products.map((item, idx) => <li key={idx}><button>{item.name}</button></li>)}
 
       </ul>
     </>
