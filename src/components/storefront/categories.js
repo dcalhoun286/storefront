@@ -14,8 +14,8 @@ function Categories (props) {
 
   function showCategory(e) {
     e.preventDefault();
-    console.log(e.target.value);
     let category = e.target.value;
+    console.log(category);
     dispatch(changeCategories(category));
   }
 

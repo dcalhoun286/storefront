@@ -18,7 +18,7 @@ const initialState = {
       "__v": 0
     }
   ],
-  activeCategory: {},
+  activeCategory: '',
 }
 
 export default function reducer (state=initialState, action) {
