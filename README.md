@@ -84,6 +84,31 @@ Perform the appropriate `post`, `put`, or `delete` action via API call (using th
 
 ![uml-phase3](./assets/uml-storefront-phase3.drawio.png)
 
+## Phase 4
+
+In phase 4, we will be completing work on our Virtual Store by adding a two full page views to the application: Product Details and Checkout
+
+The user stories from Phases 1, 2 and 3 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+- As a user, I want to see a full detail view of a product so that I can make a more informed choice about purchasing it.
+- As a user, I want to view my full cart and initiate the checkout process so that I can purchase my items and have them delivered.
+
+### Technical Requirements / Notes - Phase 4
+
+- Add routing to the application
+- Link every product to a page that displays the full product details
+- Link the “Cart” summary in the header to a full shopping cart page with shipping/payment forms
+- Additionally, we will be swapping out our Redux store and replacing it with a store built using Redux Toolkit
+
+#### Notes on State Management
+
+While we will still be using Redux, the technical requirement for this phase is to refactor existing actions and reducers into the new Redux Toolkit framework/pattern.
+Note that there is no new state functionality (the two pages are read-only), but the underlying architecture will be new.
+
+### UML - Phase 4
+
+![uml-phase4](./assets/uml-storefront-phase4.drawio.png)
+
 ## Resources and Collaborators
 
 - Images: [Unsplash](https://unsplash.com/)
