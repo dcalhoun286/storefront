@@ -21,7 +21,7 @@ The following user/developer stories detail the major functionality for this pha
 - As a user, I want to choose a category and see a list of all available products matching that category
 - As a user, I want a clean, easy to user user interface so that I can shop the online store with confidence
 
-### Technical Requirements / Notes
+### Technical Requirements / Notes - Phase 1
 
 The high level development tasks that address the above end user requirements:
 
@@ -36,7 +36,55 @@ The high level development tasks that address the above end user requirements:
 
 ![uml-phase1](./assets/uml-storefront-phase1.drawio.png)
 
-### Resources and Collaborators
+## Phase 2
+
+In Phase 2, we will be adding the "Add to Cart" feature to our application, which will allow our users to not only browse items in the store, but also select them and have them persist in their "shopping cart" for later purchase.
+
+The user stories from Phase 1 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+- As a user, I want to choose from products in the list and add them to my shopping cart
+- As a user, I want to see the products that I’ve added to my shopping cart so that
+- As a user, I want to change the quantity of items I intend to purchase in my shopping cart
+- As a user, I want to be able to remove an item from my shopping cart
+
+### Technical Requirements / Notes - Phase 2
+
+- Continue to use Material UI Components for layout and styling
+- Add a “Cart” indicator to the header, like this: Cart (0)
+- Create a new Cart component to show the items in the user’s cart
+
+### UML - Phase 2
+
+![uml-phase2](./assets/uml-storefront-phase2.drawio.png)
+
+## Phase 3
+
+In phase 3, we will be connecting our Virtual Store to a live API so that our data is persistent and able to be separately managed.
+
+The user stories from Phases 1 and 2 remain unchanged. For this phase, we are now adding the following new user stories to meet the new requirements.
+
+- As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock
+- As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it
+
+### Technical Requirements / Notes - Phase 3
+
+- Continue to use Material UI Components for layout and styling
+- Load the category and product list from a remote API on page load.
+- Update the product quantity in stock when adding items to (or removing from) the cart
+- Continue to use multiple reducers
+
+#### Notes on State Management
+
+- You will need to use `useEffect()` to dispatch a load action on the initial page load
+- This will need to use **thunk** as it will be asynchronous
+When adding/removing/updating items in the cart, the action/reducer will need to update the server
+Perform the appropriate `post`, `put`, or `delete` action via API call (using thunk in an async action) on each of these actions as performed by the users
+
+### UML - Phase 3
+
+![uml-phase3](./assets/uml-storefront-phase3.drawio.png)
+
+## Resources and Collaborators
 
 - Images: [Unsplash](https://unsplash.com/)
 
